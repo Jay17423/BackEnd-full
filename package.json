@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemin src/iindex.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "javascript",
@@ -17,6 +17,8 @@
     "nodemon": "^3.1.9"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.9.5",
     "prettier": "^3.4.2"
   }
 }
