@@ -51,7 +51,7 @@ const registerUser = asyncHandler(async (req, res) => {
     throw new ApiError(400, "Avatar upload failed");
   }
 
-  // Create user in database
+  // Create user in databasfsdf
   const user = await User.create({
     fullName,
     avatar: avatar.url,
